@@ -1,0 +1,4 @@
+ralink_default_fw_size_64M=67108864
+BuildFirmware/Default64M/squashfs=$(call BuildFirmware/OF,$(1),$(2),$(3),$(ralink_default_fw_size_64M),$(4))
+BuildFirmware/Default64M/initramfs=$(call BuildFirmware/OF/initramfs,$(1),$(2),$(3),$(4))
+IMAGE_SIZE := $(ralink_default_fw_size_64M)
